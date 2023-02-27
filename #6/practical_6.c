@@ -11,8 +11,10 @@ int main()
     // use for loop
     for (i = 1; i <= n1 && i <= n2; ++i)
     {
-        if (n1 % i == 0 && n2 % i == 0)
+        if (n1 % i == 0 && n2 % i == 0){
+                    
             GCD_Num = i; /* if n1 and n2 is completely divisible by i, the divisible number will be the GCD_Num */
+        }
     }
     // print the GCD of two numbers
     printf(" GCD of two numbers %d and %d is %d.\n", n1, n2, GCD_Num);
