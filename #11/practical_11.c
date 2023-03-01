@@ -4,9 +4,10 @@ int main() {
     int n1, n2, i, j, isPrime;
 
     printf("Enter the first number (n1): ");
-    scanf("%d", &n1);
+    scanf("%d", &n1); // Input n1
+
     printf("Enter the second number (n2): ");
-    scanf("%d", &n2);
+    scanf("%d", &n2); // Input n2
 
     for (i = n2; i <= n1; i++) {
         isPrime = 1; // Assume the current number is prime

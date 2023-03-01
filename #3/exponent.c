@@ -1,5 +1,5 @@
 // Topic 9: Fundamentals of Input & Output Handling in C
-// Practical #3
+// Practical #3: part(i)
 
 #include<stdio.h>
 #include<conio.h>

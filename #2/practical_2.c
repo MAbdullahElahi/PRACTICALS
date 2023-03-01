@@ -47,7 +47,7 @@ int main()
     rhom = (p * q) / 2; // Farmulae to calculate area of rhombus
     trape = ((c + d) / 2) * h; // Farmulae to calculate area of trapezoid
 
-     printf("\nArea of triangle is: %.2f\nArea of Parallelogram is: %.2f\nArea of Rhombus is: %.2f\nArea of Trapezoid is: %.2f\n", tri, para, rhom, trape); //print result to the screen
+    printf("\nArea of triangle is: %f\nArea of Parallelogram is: %f\nArea of Rhombus is: %f\nArea of Trapezoid is: %f\n", tri, para, rhom, trape); //print result to the screen
 
 
     getch();

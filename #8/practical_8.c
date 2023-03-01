@@ -1,21 +1,21 @@
 #include<stdio.h>
-#include<conio.h>
+// #include<conio.h>
 
 int main() {
 	
-	int n1, n2, n3, n4, n5, sum, prod, avg;
+	float n1, n2, n3, n4, n5, sum, prod, avg;
 	
 	printf("Enter 5 values: \n");
-	scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+	scanf("%f %f %f %f %f", &n1, &n2, &n3, &n4, &n5);
 	
 	sum = n1 + n2 + n3 + n4 + n5; 
 	prod = n1 * n2 * n3 * n4 * n5; 
 	avg = (n1 * n2 * n3 * n4 * n5)/5;
 	
-	printf("Sum of (%d + %d + %d + %d + %d) = %d\n", n1, n2, n3, n4, n5, sum);
-	printf("Product of (%d x %d x %d x %d x %d) = %d\n", n1, n2, n3, n4, n5, prod);
-	printf("Average of ((%d x %d x %d x %d x %d)/5) = %d\n", n1, n2, n3, n4, n5, avg);
+	printf("Sum of (%.2f + %.2f + %.2f + %.2f + %.2f) = %.2f\n", n1, n2, n3, n4, n5, sum);
+	printf("Product of (%.2f x %.2f x %.2f x %.2f x %.2f) = %.2f\n", n1, n2, n3, n4, n5, prod);
+	printf("Average of ((%.2f x %.2f x %.2f x %.2f x %.2f)/5) = %.2f\n", n1, n2, n3, n4, n5, avg);
 	
-	getch();
+	// getch();
 	return 0;
 }
