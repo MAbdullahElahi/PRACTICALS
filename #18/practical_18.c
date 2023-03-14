@@ -1,44 +1,24 @@
 #include <stdio.h>
 #include <conio.h>
 int main() {
-    int start, i, n, choice; // Declare Variables
-
+    int n, i,x;
+    
     printf("Enter the starting number: ");
-    scanf("%d", &start); // Input: String Number
-
-    printf("Enter the number of terms: ");
-    scanf("%d", &n); // Input how much time the loop will run
-
-    printf("Enter 1 for even numbers or 2 for odd numbers: ");
-    scanf("%d", &choice); // Input: choice for even or odd number
-
-    // Check for the choice
-    if (choice == 1) { 
-        // Check if the number is odd
-        if (start % 2 != 0) { 
-            start++;
-        }
-        for (i = 0; i < n; i++) {
-            printf("%d\n", start);
-            start += 2;
-        }
-    } 
-    // Check for the choice
-    else if (choice == 2) {
-        // Check if the number is even
-        if (start % 2 == 0) {
-            start++;
-        }
-        for (i = 0; i < n; i++) {
-            printf("%d\n", start);
-            start += 2;
-        }
+    scanf("%d", &n); // Input starting number
+    
+    printf("Enter the last number: ");
+    scanf("%d", &x);
+    
+    if (n % 2 == 0) { // If starting number is even, make it odd
+        n++;
     }
-    // If the choice is nor 1 or 2 then run the following else
-    else {
-        printf("Invalid choice.");
+    
+    printf("Sequence of odd numbers starting from %d:\n", n);
+    
+    for (i = n; i <= x; i+=2) { // Print 20 odd numbers starting from n
+        printf("%d ", i);
     }
-
+    
     getch();
     return 0;
 }
