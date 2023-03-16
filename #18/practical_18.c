@@ -1,24 +1,39 @@
 #include <stdio.h>
 #include <conio.h>
 int main() {
-    int n, i,x;
-    
+    int start, i, n, choice;
+
     printf("Enter the starting number: ");
-    scanf("%d", &n); // Input starting number
-    
-    printf("Enter the last number: ");
-    scanf("%d", &x);
-    
-    if (n % 2 == 0) { // If starting number is even, make it odd
-        n++;
+    scanf("%d", &start);
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Enter 1 for even numbers or 2 for odd numbers: ");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+        if (start % 2 != 0) {
+            start++;
+        }
+        for (i = 0; i < n; i++) {
+            printf("%d\n", start);
+            start += 2;
+        }
+    } 
+    else if (choice == 2) {
+        if (start % 2 == 0) {
+            start++;
+        }
+        for (i = 0; i < n; i++) {
+            printf("%d\n", start);
+            start += 2;
+        }
     }
-    
-    printf("Sequence of odd numbers starting from %d:\n", n);
-    
-    for (i = n; i <= x; i+=2) { // Print 20 odd numbers starting from n
-        printf("%d ", i);
+    else {
+        printf("Invalid choice.");
     }
-    
     getch();
     return 0;
 }
+
